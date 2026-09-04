@@ -1,0 +1,362 @@
+{
+  "beta": 0.5,
+  "primary_fpr_budget": 0.05,
+  "matchers": {
+    "exact": {
+      "bands": {
+        "approve_at": 1e-09,
+        "reject_below": 0.0
+      },
+      "approve_rate": 0.2833333333333333,
+      "review_rate": 0.85,
+      "unavoidable_fp_ids": [
+        92
+      ],
+      "unavoidable_fn_ids": [],
+      "single_threshold": {
+        "tp": 17,
+        "fp": 1,
+        "fn": 43,
+        "tn": 59,
+        "precision": 0.9444444444444444,
+        "recall": 0.2833333333333333,
+        "fpr": 0.016666666666666666,
+        "fbeta": 0.643939393939394,
+        "accuracy": 0.6333333333333333
+      },
+      "threshold": 1.0,
+      "per_category_accuracy": {
+        "common_name_collision": 0.8,
+        "control_negative": 1.0,
+        "control_positive": 1.0,
+        "gender_variant": 1.0,
+        "honorific_masking": 1.0,
+        "honorific_suffix": 1.0,
+        "initial_collision": 1.0,
+        "initials_expanded": 0.0,
+        "married_name_change": 0.0,
+        "middle_name_dropped": 0.0,
+        "ocr_noise": 0.0,
+        "one_edit_apart": 1.0,
+        "patronymic_convention": 0.2,
+        "shared_common_surname": 1.0,
+        "sibling": 1.0,
+        "spacing_punctuation": 0.25,
+        "spouse_shared_surname": 1.0,
+        "subset_token": 1.0,
+        "token_reorder": 0.0,
+        "transliteration": 0.0,
+        "transposed_different": 1.0
+      }
+    },
+    "levenshtein": {
+      "bands": {
+        "approve_at": 0.9473684220526316,
+        "reject_below": 0.09090909090909094
+      },
+      "approve_rate": 0.2833333333333333,
+      "review_rate": 0.8416666666666667,
+      "unavoidable_fp_ids": [
+        92
+      ],
+      "unavoidable_fn_ids": [],
+      "single_threshold": {
+        "tp": 19,
+        "fp": 3,
+        "fn": 41,
+        "tn": 57,
+        "precision": 0.8636363636363636,
+        "recall": 0.31666666666666665,
+        "fpr": 0.05,
+        "fbeta": 0.6418918918918919,
+        "accuracy": 0.6333333333333333
+      },
+      "threshold": 0.9375,
+      "per_category_accuracy": {
+        "common_name_collision": 0.8,
+        "control_negative": 1.0,
+        "control_positive": 1.0,
+        "gender_variant": 1.0,
+        "honorific_masking": 1.0,
+        "honorific_suffix": 1.0,
+        "initial_collision": 1.0,
+        "initials_expanded": 0.0,
+        "married_name_change": 0.0,
+        "middle_name_dropped": 0.0,
+        "ocr_noise": 0.0,
+        "one_edit_apart": 1.0,
+        "patronymic_convention": 0.2,
+        "shared_common_surname": 1.0,
+        "sibling": 0.75,
+        "spacing_punctuation": 0.5,
+        "spouse_shared_surname": 1.0,
+        "subset_token": 1.0,
+        "token_reorder": 0.0,
+        "transliteration": 0.125,
+        "transposed_different": 1.0
+      }
+    },
+    "jaro_winkler": {
+      "bands": {
+        "approve_at": 0.9859649132807017,
+        "reject_below": 0.2878787878787879
+      },
+      "approve_rate": 0.2833333333333333,
+      "review_rate": 0.85,
+      "unavoidable_fp_ids": [
+        92
+      ],
+      "unavoidable_fn_ids": [],
+      "single_threshold": {
+        "tp": 19,
+        "fp": 2,
+        "fn": 41,
+        "tn": 58,
+        "precision": 0.9047619047619048,
+        "recall": 0.31666666666666665,
+        "fpr": 0.03333333333333333,
+        "fbeta": 0.6597222222222222,
+        "accuracy": 0.6416666666666667
+      },
+      "threshold": 0.9833333333333333,
+      "per_category_accuracy": {
+        "common_name_collision": 0.8,
+        "control_negative": 1.0,
+        "control_positive": 1.0,
+        "gender_variant": 1.0,
+        "honorific_masking": 1.0,
+        "honorific_suffix": 1.0,
+        "initial_collision": 1.0,
+        "initials_expanded": 0.0,
+        "married_name_change": 0.0,
+        "middle_name_dropped": 0.0,
+        "ocr_noise": 0.2,
+        "one_edit_apart": 1.0,
+        "patronymic_convention": 0.2,
+        "shared_common_surname": 1.0,
+        "sibling": 0.875,
+        "spacing_punctuation": 0.25,
+        "spouse_shared_surname": 1.0,
+        "subset_token": 1.0,
+        "token_reorder": 0.0,
+        "transliteration": 0.125,
+        "transposed_different": 1.0
+      }
+    },
+    "token_set": {
+      "bands": {
+        "approve_at": 0.800000001,
+        "reject_below": 0.0
+      },
+      "approve_rate": 0.5666666666666667,
+      "review_rate": 0.6583333333333333,
+      "unavoidable_fp_ids": [
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        114
+      ],
+      "unavoidable_fn_ids": [],
+      "single_threshold": {
+        "tp": 24,
+        "fp": 2,
+        "fn": 36,
+        "tn": 58,
+        "precision": 0.9230769230769231,
+        "recall": 0.4,
+        "fpr": 0.03333333333333333,
+        "fbeta": 0.7317073170731709,
+        "accuracy": 0.6833333333333333
+      },
+      "threshold": 1.0,
+      "per_category_accuracy": {
+        "common_name_collision": 0.8,
+        "control_negative": 1.0,
+        "control_positive": 1.0,
+        "gender_variant": 1.0,
+        "honorific_masking": 1.0,
+        "honorific_suffix": 1.0,
+        "initial_collision": 1.0,
+        "initials_expanded": 0.0,
+        "married_name_change": 0.0,
+        "middle_name_dropped": 0.0,
+        "ocr_noise": 0.0,
+        "one_edit_apart": 1.0,
+        "patronymic_convention": 0.4,
+        "shared_common_surname": 1.0,
+        "sibling": 1.0,
+        "spacing_punctuation": 0.25,
+        "spouse_shared_surname": 1.0,
+        "subset_token": 1.0,
+        "token_reorder": 1.0,
+        "transliteration": 0.0,
+        "transposed_different": 0.75
+      }
+    },
+    "phonetic": {
+      "bands": {
+        "approve_at": 0.800000001,
+        "reject_below": 0.0
+      },
+      "approve_rate": 0.6666666666666666,
+      "review_rate": 0.5916666666666667,
+      "unavoidable_fp_ids": [
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        114,
+        120
+      ],
+      "unavoidable_fn_ids": [],
+      "single_threshold": {
+        "tp": 25,
+        "fp": 2,
+        "fn": 35,
+        "tn": 58,
+        "precision": 0.9259259259259259,
+        "recall": 0.4166666666666667,
+        "fpr": 0.03333333333333333,
+        "fbeta": 0.7440476190476191,
+        "accuracy": 0.6916666666666667
+      },
+      "threshold": 0.9833333333333334,
+      "per_category_accuracy": {
+        "common_name_collision": 0.8,
+        "control_negative": 1.0,
+        "control_positive": 1.0,
+        "gender_variant": 1.0,
+        "honorific_masking": 1.0,
+        "honorific_suffix": 1.0,
+        "initial_collision": 1.0,
+        "initials_expanded": 0.0,
+        "married_name_change": 0.0,
+        "middle_name_dropped": 0.0,
+        "ocr_noise": 0.0,
+        "one_edit_apart": 1.0,
+        "patronymic_convention": 0.4,
+        "shared_common_surname": 1.0,
+        "sibling": 1.0,
+        "spacing_punctuation": 0.25,
+        "spouse_shared_surname": 1.0,
+        "subset_token": 1.0,
+        "token_reorder": 1.0,
+        "transliteration": 0.125,
+        "transposed_different": 0.75
+      }
+    },
+    "hybrid": {
+      "bands": {
+        "approve_at": 0.9214814824814814,
+        "reject_below": 0.5
+      },
+      "approve_rate": 0.7,
+      "review_rate": 0.475,
+      "unavoidable_fp_ids": [
+        86,
+        87,
+        89,
+        90,
+        91,
+        92,
+        114,
+        120
+      ],
+      "unavoidable_fn_ids": [
+        67,
+        68
+      ],
+      "single_threshold": {
+        "tp": 29,
+        "fp": 2,
+        "fn": 31,
+        "tn": 58,
+        "precision": 0.9354838709677419,
+        "recall": 0.48333333333333334,
+        "fpr": 0.03333333333333333,
+        "fbeta": 0.7880434782608694,
+        "accuracy": 0.725
+      },
+      "threshold": 0.9833333333333334,
+      "per_category_accuracy": {
+        "common_name_collision": 0.8,
+        "control_negative": 1.0,
+        "control_positive": 1.0,
+        "gender_variant": 1.0,
+        "honorific_masking": 1.0,
+        "honorific_suffix": 1.0,
+        "initial_collision": 1.0,
+        "initials_expanded": 0.0,
+        "married_name_change": 0.0,
+        "middle_name_dropped": 0.0,
+        "ocr_noise": 0.2,
+        "one_edit_apart": 1.0,
+        "patronymic_convention": 0.4,
+        "shared_common_surname": 1.0,
+        "sibling": 1.0,
+        "spacing_punctuation": 0.75,
+        "spouse_shared_surname": 1.0,
+        "subset_token": 1.0,
+        "token_reorder": 1.0,
+        "transliteration": 0.25,
+        "transposed_different": 0.75
+      }
+    },
+    "rarity_weighted": {
+      "bands": {
+        "approve_at": 0.8858479542163742,
+        "reject_below": 0.36363636363636365
+      },
+      "approve_rate": 0.6333333333333333,
+      "review_rate": 0.525,
+      "unavoidable_fp_ids": [
+        86,
+        92,
+        114,
+        120
+      ],
+      "unavoidable_fn_ids": [],
+      "single_threshold": {
+        "tp": 32,
+        "fp": 2,
+        "fn": 28,
+        "tn": 58,
+        "precision": 0.9411764705882353,
+        "recall": 0.5333333333333333,
+        "fpr": 0.03333333333333333,
+        "fbeta": 0.8163265306122449,
+        "accuracy": 0.75
+      },
+      "threshold": 0.9666666666666667,
+      "per_category_accuracy": {
+        "common_name_collision": 0.8,
+        "control_negative": 1.0,
+        "control_positive": 1.0,
+        "gender_variant": 1.0,
+        "honorific_masking": 1.0,
+        "honorific_suffix": 1.0,
+        "initial_collision": 1.0,
+        "initials_expanded": 0.0,
+        "married_name_change": 0.0,
+        "middle_name_dropped": 0.0,
+        "ocr_noise": 0.2,
+        "one_edit_apart": 1.0,
+        "patronymic_convention": 0.4,
+        "shared_common_surname": 1.0,
+        "sibling": 1.0,
+        "spacing_punctuation": 0.75,
+        "spouse_shared_surname": 1.0,
+        "subset_token": 1.0,
+        "token_reorder": 1.0,
+        "transliteration": 0.625,
+        "transposed_different": 0.75
+      }
+    }
+  }
+}

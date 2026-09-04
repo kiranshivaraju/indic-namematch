@@ -1,0 +1,120 @@
+{
+  "exact": {
+    "approve_at": 1e-09,
+    "approve_rate": 0.2833333333,
+    "fbeta": 0.6439393939,
+    "precision": 0.9444444444,
+    "recall": 0.2833333333,
+    "reject_below": 0.0,
+    "review_rate": 0.85,
+    "unavoidable_fn_ids": [],
+    "unavoidable_fp_ids": [
+      92
+    ]
+  },
+  "hybrid": {
+    "approve_at": 0.9214814825,
+    "approve_rate": 0.7,
+    "fbeta": 0.7880434783,
+    "precision": 0.935483871,
+    "recall": 0.4833333333,
+    "reject_below": 0.5,
+    "review_rate": 0.475,
+    "unavoidable_fn_ids": [
+      67,
+      68
+    ],
+    "unavoidable_fp_ids": [
+      86,
+      87,
+      89,
+      90,
+      91,
+      92,
+      114,
+      120
+    ]
+  },
+  "jaro_winkler": {
+    "approve_at": 0.9859649133,
+    "approve_rate": 0.2833333333,
+    "fbeta": 0.6597222222,
+    "precision": 0.9047619048,
+    "recall": 0.3166666667,
+    "reject_below": 0.2878787879,
+    "review_rate": 0.85,
+    "unavoidable_fn_ids": [],
+    "unavoidable_fp_ids": [
+      92
+    ]
+  },
+  "levenshtein": {
+    "approve_at": 0.9473684221,
+    "approve_rate": 0.2833333333,
+    "fbeta": 0.6418918919,
+    "precision": 0.8636363636,
+    "recall": 0.3166666667,
+    "reject_below": 0.0909090909,
+    "review_rate": 0.8416666667,
+    "unavoidable_fn_ids": [],
+    "unavoidable_fp_ids": [
+      92
+    ]
+  },
+  "phonetic": {
+    "approve_at": 0.800000001,
+    "approve_rate": 0.6666666667,
+    "fbeta": 0.744047619,
+    "precision": 0.9259259259,
+    "recall": 0.4166666667,
+    "reject_below": 0.0,
+    "review_rate": 0.5916666667,
+    "unavoidable_fn_ids": [],
+    "unavoidable_fp_ids": [
+      86,
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      114,
+      120
+    ]
+  },
+  "rarity_weighted": {
+    "approve_at": 0.8858479542,
+    "approve_rate": 0.6333333333,
+    "fbeta": 0.8163265306,
+    "precision": 0.9411764706,
+    "recall": 0.5333333333,
+    "reject_below": 0.3636363636,
+    "review_rate": 0.525,
+    "unavoidable_fn_ids": [],
+    "unavoidable_fp_ids": [
+      86,
+      92,
+      114,
+      120
+    ]
+  },
+  "token_set": {
+    "approve_at": 0.800000001,
+    "approve_rate": 0.5666666667,
+    "fbeta": 0.7317073171,
+    "precision": 0.9230769231,
+    "recall": 0.4,
+    "reject_below": 0.0,
+    "review_rate": 0.6583333333,
+    "unavoidable_fn_ids": [],
+    "unavoidable_fp_ids": [
+      87,
+      88,
+      89,
+      90,
+      91,
+      92,
+      114
+    ]
+  }
+}

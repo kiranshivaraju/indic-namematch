@@ -1,0 +1,121 @@
+id,name_a,name_b,label,category,resolvable,exact,levenshtein,jaro_winkler,token_set,phonetic,hybrid,rarity_weighted
+1,Rajesh Kumar Sharma,Rajesh Kumar Sharma,match,control_positive,yes,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+2,PRIYA MENON,Priya Menon,match,control_positive,yes,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+3,Amit  Verma,Amit Verma,match,control_positive,yes,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+4,Sunita Devi ,Sunita Devi,match,control_positive,yes,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+5,Arjun Reddy,ARJUN REDDY,match,control_positive,yes,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+6,Fatima Sheikh,Fatima Sheikh,match,control_positive,yes,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+7,Vikram Singh Rathore,Vikram Singh  Rathore,match,control_positive,yes,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+8,Ananya Iyer,ananya iyer,match,control_positive,yes,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+9,Mohammed Irfan,Mohammed Irfan,match,control_positive,yes,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+10,Joseph Mathew,JOSEPH  MATHEW,match,control_positive,yes,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+11,Rajesh Kumar Sharma,Priya Menon,non_match,control_negative,yes,0.0,0.1053,0.4726,0.0,0.0,0.0,0.0
+12,Amit Verma,Fatima Sheikh,non_match,control_negative,yes,0.0,0.3077,0.6271,0.0,0.0,0.0,0.0
+13,Arjun Reddy,Harpreet Kaur,non_match,control_negative,yes,0.0,0.1538,0.5131,0.0,0.0,0.0,0.0
+14,Sunita Devi,Mohammed Irfan,non_match,control_negative,yes,0.0,0.0714,0.4372,0.0,0.0,0.0,0.0
+15,Joseph Mathew,Lakshmi Narayanan,non_match,control_negative,yes,0.0,0.1765,0.4262,0.0,0.0,0.0,0.0
+16,Vikram Singh Rathore,Ananya Iyer,non_match,control_negative,yes,0.0,0.2,0.504,0.0,0.0,0.0,0.0
+17,Kavita Joshi,Rustom Mistry,non_match,control_negative,yes,0.0,0.1538,0.5004,0.0,0.0,0.0,0.0
+18,Deepak Chauhan,Meenakshi Sundaram,non_match,control_negative,yes,0.0,0.3333,0.6733,0.0,0.0,0.0,0.0
+19,Farhan Ansari,Gurpreet Singh Bedi,non_match,control_negative,yes,0.0,0.2105,0.5091,0.0,0.0,0.0,0.0
+20,Nithya Balakrishnan,Suresh Patel,non_match,control_negative,yes,0.0,0.1053,0.4599,0.0,0.0,0.0,0.0
+21,S. Kumar,Suresh Kumar,match,initials_expanded,yes,0.0,0.5833,0.7464,0.925,0.925,0.925,0.6529
+22,R. K. Sharma,Rajesh Kumar Sharma,match,initials_expanded,yes,0.0,0.5263,0.6431,0.9,0.9,0.9,0.7939
+23,A Iyer,Ananya Iyer,match,initials_expanded,yes,0.0,0.5455,0.5051,0.925,0.925,0.925,0.541
+24,P. V. Narasimhan,Padmanabhan Venkat Narasimhan,match,initials_expanded,yes,0.0,0.4828,0.553,0.9,0.9,0.9,0.5837
+25,M. Fatima,Mariam Fatima,match,initials_expanded,yes,0.0,0.6154,0.7721,0.925,0.925,0.925,0.7159
+26,K.Balaji,Krishnan Balaji,match,initials_expanded,yes,0.0,0.5333,0.5056,0.925,0.925,0.925,0.7159
+27,Suresh K,Suresh Kumar,match,initials_expanded,yes,0.0,0.6667,0.9333,0.925,0.925,0.925,0.9591
+28,Kumar Suresh,Suresh Kumar,match,token_reorder,yes,0.0,0.1667,0.6111,1.0,1.0,1.0,1.0
+29,Sharma Rajesh Kumar,Rajesh Kumar Sharma,match,token_reorder,yes,0.0,0.2632,0.8421,1.0,1.0,1.0,1.0
+30,Iyer Ananya,Ananya Iyer,match,token_reorder,yes,0.0,0.0909,0.5581,1.0,1.0,1.0,1.0
+31,Menon Priya,Priya Menon,match,token_reorder,yes,0.0,0.0909,0.2879,1.0,1.0,1.0,1.0
+32,Singh Vikram Rathore,Vikram Rathore Singh,match,token_reorder,yes,0.0,0.4,0.7333,1.0,1.0,1.0,1.0
+33,Reddy Arjun Kumar,Arjun Kumar Reddy,match,token_reorder,yes,0.0,0.2941,0.6893,1.0,1.0,1.0,1.0
+34,Mohammed Irfan,Mohammad Irfan,match,transliteration,yes,0.0,0.9286,0.9253,0.5,0.975,0.975,0.9857
+35,Muhammad Ali Khan,Mohammed Ali Khan,match,transliteration,yes,0.0,0.8824,0.8394,0.6667,0.9833,0.9833,0.7867
+36,Lakshmi Narayanan,Laxmi Narayanan,match,transliteration,yes,0.0,0.8235,0.9352,0.5,0.975,0.975,0.975
+37,Syed Abdul Rahman,Sayyed Abdul Rehman,match,transliteration,yes,0.0,0.8421,0.8625,0.3333,0.65,0.89,0.8289
+38,Krishna Murthy,Krishnamurthy,match,transliteration,yes,0.0,0.9286,0.9857,0.0,0.0,1.0,1.0
+39,Aashish Bhattacharya,Ashish Bhattacharjee,match,transliteration,yes,0.0,0.8,0.7865,0.0,0.95,0.95,0.95
+40,Anirban Chowdhury,Anirban Choudhury,match,transliteration,yes,0.0,0.9412,0.9577,0.5,0.975,0.975,0.975
+41,Gauri Shankar Tiwari,Gowri Shankar Tewari,match,transliteration,yes,0.0,0.85,0.7688,0.3333,0.9667,0.9667,0.9667
+42,Rajesh Kumar Sharma,Rajesh Sharma,match,middle_name_dropped,yes,0.0,0.6842,0.8984,0.8,0.8,0.8,0.9143
+43,Vikram Singh Rathore,Vikram Rathore,match,middle_name_dropped,yes,0.0,0.7,0.9114,0.8,0.8,0.8,0.9639
+44,Priya Lakshmi Menon,Priya Menon,match,middle_name_dropped,yes,0.0,0.5789,0.9158,0.8,0.8,0.8,0.6154
+45,Mohammed Abdul Kareem,Mohammed Kareem,match,middle_name_dropped,yes,0.0,0.7143,0.9295,0.8,0.8,0.8,0.7368
+46,Anjali Devi Patel,Anjali Patel,match,middle_name_dropped,yes,0.0,0.7059,0.9078,0.8,0.8,0.8,0.9492
+47,Sanjay Ramesh Gupta,Sanjay Gupta,match,middle_name_dropped,yes,0.0,0.6316,0.8846,0.8,0.8,0.8,0.8
+48,R Venkatesan,Ramachandran Venkatesan,match,patronymic_convention,yes,0.0,0.5217,0.4758,0.925,0.925,0.925,0.7159
+49,Venkatesan R,R Venkatesan,match,patronymic_convention,yes,0.0,0.6667,0.8889,1.0,1.0,1.0,1.0
+50,T N Seshadri,Tirunellai Narayanan Seshadri,match,patronymic_convention,yes,0.0,0.4138,0.4654,0.9,0.9,0.9,0.5837
+51,Nithya B,Nithya Balakrishnan,match,patronymic_convention,yes,0.0,0.4211,0.8842,0.925,0.925,0.925,0.7159
+52,Manjunath S/o Ramaiah,Manjunath Ramaiah,match,patronymic_convention,yes,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+53,Smt. Sunita Devi,Sunita Devi,match,honorific_suffix,yes,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+54,Shri Rajesh Kumar Sharma,Rajesh Kumar Sharma,match,honorific_suffix,yes,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+55,Kumari Ananya Iyer,Ananya Iyer,match,honorific_suffix,yes,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+56,Dr. Meenakshi Sundaram,Meenakshi Sundaram,match,honorific_suffix,yes,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+57,Ramesh Patel Jr.,Ramesh Patel,match,honorific_suffix,yes,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+58,Ram Kumar,Ramkumar,match,spacing_punctuation,yes,0.0,0.8889,0.9741,0.0,0.0,1.0,1.0
+59,Maria D'Souza,Maria DSouza,match,spacing_punctuation,yes,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+60,Sri Ram Chandran,Sriram Chandran,match,spacing_punctuation,yes,0.0,0.9375,0.9543,0.4,0.4,1.0,1.0
+61,Naga Arjuna Rao,Nagarjuna Rao,match,spacing_punctuation,yes,0.0,0.8667,0.9118,0.4,0.4,0.9231,0.9231
+62,Rajesh Kumar,Rajcsh Kumar,match,ocr_noise,yes,0.0,0.9167,0.9611,0.5,0.5,0.8689,0.5237
+63,Anita Sharma,Anita Shanna,match,ocr_noise,yes,0.0,0.8333,0.9333,0.5,0.5,0.5,0.3636
+64,Vikram Singh,Vlkram Singh,match,ocr_noise,yes,0.0,0.9167,0.95,0.5,0.5,0.86,0.7565
+65,Priya Menon,Priya Meno n,match,ocr_noise,yes,0.0,0.9167,0.9833,0.4,0.4,1.0,1.0
+66,Balaji Iyengar,Ba1aji Iyengar,match,ocr_noise,yes,0.0,0.9286,0.9619,0.5,0.5,0.8644,0.8644
+67,Priya Menon,Priya Kumar Sharma,match,married_name_change,no,0.0,0.3889,0.6751,0.4,0.4,0.4,0.4571
+68,Sunita Patel,Sunita Devi Chauhan,match,married_name_change,no,0.0,0.4211,0.8225,0.4,0.4,0.4,0.4571
+69,Ananya Iyer,Ananya Balakrishnan,match,married_name_change,no,0.0,0.4211,0.8362,0.5,0.5,0.5,0.5882
+70,Fatima Sheikh,Fatima Ansari,match,married_name_change,no,0.0,0.5385,0.8769,0.5,0.5,0.5,0.7143
+71,Rajesh Kumar Sharma,Ramesh Kumar Sharma,non_match,sibling,yes,0.0,0.9474,0.8608,0.6667,0.6667,0.9096,0.8858
+72,Anita Suresh Patel,Ankita Suresh Patel,non_match,sibling,yes,0.0,0.9474,0.986,0.6667,0.6667,0.9215,0.7372
+73,Priya Ramachandran Menon,Divya Ramachandran Menon,non_match,sibling,yes,0.0,0.875,0.8384,0.6667,0.6667,0.6667,0.6667
+74,Mohammed Irfan Ansari,Mohammed Imran Ansari,non_match,sibling,yes,0.0,0.9048,0.981,0.6667,0.6667,0.9013,0.8356
+75,Arjun Venkat Reddy,Aravind Venkat Reddy,non_match,sibling,yes,0.0,0.8,0.817,0.6667,0.6667,0.6667,0.5833
+76,Gurpreet Singh Bedi,Harpreet Singh Bedi,non_match,sibling,yes,0.0,0.8947,0.9298,0.6667,0.6667,0.6667,0.5349
+77,Nithya Balakrishnan,Nithin Balakrishnan,non_match,sibling,yes,0.0,0.8947,0.8873,0.5,0.5,0.5,0.5
+78,Sanjay Ramesh Gupta,Sanjeev Ramesh Gupta,non_match,sibling,yes,0.0,0.85,0.9313,0.6667,0.6667,0.6667,0.5333
+79,Sunil Kumar,Sushil Kumar,non_match,one_edit_apart,yes,0.0,0.8333,0.9313,0.5,0.5,0.5,0.1765
+80,Rajesh Verma,Ramesh Verma,non_match,one_edit_apart,yes,0.0,0.9167,0.9556,0.5,0.5,0.8644,0.8644
+81,Anita Joshi,Ankita Joshi,non_match,one_edit_apart,yes,0.0,0.9167,0.9778,0.5,0.5,0.8822,0.6416
+82,Deepak Chauhan,Dinesh Chauhan,non_match,one_edit_apart,yes,0.0,0.6429,0.7986,0.5,0.5,0.5,0.3636
+83,Manoj Tiwari,Manoj Tiwary,non_match,one_edit_apart,no,0.0,0.9167,0.9667,0.5,0.5,0.8733,0.8733
+84,Farhan Ansari,Furqan Ansari,non_match,one_edit_apart,yes,0.0,0.8462,0.7986,0.5,0.5,0.5,0.2857
+85,Meena Sundaram,Meenakshi Sundaram,non_match,one_edit_apart,no,0.0,0.7778,0.9413,0.5,0.5,0.8644,0.8644
+86,Vikas Chauhan,Vikash Chauhan,non_match,one_edit_apart,no,0.0,0.9286,0.9396,0.5,0.975,0.975,0.9643
+87,S Kumar,Sunita Kumar,non_match,initial_collision,no,0.0,0.5833,0.7679,0.925,0.925,0.925,0.6529
+88,R K Sharma,Rekha Kamala Sharma,non_match,initial_collision,no,0.0,0.5263,0.5466,0.9,0.9,0.9,0.4226
+89,A Iyer,Arvind Iyer,non_match,initial_collision,no,0.0,0.5455,0.4798,0.925,0.925,0.925,0.541
+90,M Fatima,Mohsina Fatima,non_match,initial_collision,no,0.0,0.5714,0.7402,0.925,0.925,0.925,0.7159
+91,P Reddy,Prakash Reddy,non_match,initial_collision,no,0.0,0.5385,0.5531,0.925,0.925,0.925,0.541
+92,Amit Kumar,Amit Kumar,non_match,common_name_collision,no,1.0,1.0,1.0,1.0,1.0,1.0,1.0
+93,Rajesh Kumar Sharma,Rajesh Kumar Verma,non_match,common_name_collision,yes,0.0,0.8421,0.9274,0.6667,0.6667,0.6667,0.5789
+94,Mohammed Ali Khan,Mohammed Ali Sheikh,non_match,common_name_collision,yes,0.0,0.7368,0.921,0.6667,0.6667,0.6667,0.6667
+95,Priya Menon Nair,Priya Menon Pillai,non_match,common_name_collision,yes,0.0,0.7222,0.9163,0.6667,0.6667,0.6667,0.6667
+96,Suresh Babu Reddy,Suresh Babu Rao,non_match,common_name_collision,yes,0.0,0.7647,0.9263,0.6667,0.6667,0.6667,0.6667
+97,Rajesh Kumar Sharma,Sunita Rajesh Sharma,non_match,spouse_shared_surname,yes,0.0,0.4,0.7245,0.6667,0.6667,0.6667,0.7442
+98,Mohammed Irfan Ansari,Ayesha Irfan Ansari,non_match,spouse_shared_surname,yes,0.0,0.619,0.7222,0.6667,0.6667,0.6667,0.6667
+99,Balaji Iyengar,Kavitha Balaji Iyengar,non_match,spouse_shared_surname,yes,0.0,0.6364,0.724,0.8,0.8,0.8,0.8
+100,Gurpreet Singh Bedi,Harleen Kaur Bedi,non_match,spouse_shared_surname,yes,0.0,0.4737,0.6208,0.3333,0.3333,0.3333,0.4651
+101,Nandan Kumar,Nandini Kumar,non_match,gender_variant,yes,0.0,0.8462,0.9526,0.5,0.5,0.8638,0.7631
+102,Ravi Shankar Iyer,Ravina Shankar Iyer,non_match,gender_variant,yes,0.0,0.8947,0.9378,0.6667,0.6667,0.9156,0.8089
+103,Sunil Chauhan,Sunila Chauhan,non_match,gender_variant,yes,0.0,0.9286,0.9319,0.5,0.5,0.8867,0.6448
+104,Rajesh Sharma,Rajeshwari Sharma,non_match,gender_variant,yes,0.0,0.7647,0.8991,0.5,0.5,0.868,0.6313
+105,Amit Singh,Rahul Singh,non_match,shared_common_surname,yes,0.0,0.6364,0.7788,0.5,0.5,0.5,0.2727
+106,Pooja Sharma,Neha Sharma,non_match,shared_common_surname,yes,0.0,0.6667,0.7146,0.5,0.5,0.5,0.5
+107,Vijay Kumar,Ajay Kumar,non_match,shared_common_surname,yes,0.0,0.8182,0.869,0.5,0.5,0.5,0.2727
+108,Fatima Sheikh,Zainab Sheikh,non_match,shared_common_surname,yes,0.0,0.6923,0.8462,0.5,0.5,0.5,0.2857
+109,Arun Nair,Kiran Nair,non_match,shared_common_surname,yes,0.0,0.7,0.8546,0.5,0.5,0.5,0.3636
+110,Kumar,Suresh Kumar,non_match,subset_token,no,0.0,0.4167,0.5222,0.6667,0.6667,0.6667,0.4286
+111,Lakshmi,Lakshmi Narayanan,non_match,subset_token,no,0.0,0.4118,0.8824,0.6667,0.6667,0.6667,0.6667
+112,Devi,Sunita Devi,non_match,subset_token,no,0.0,0.3636,0.447,0.6667,0.6667,0.6667,0.4286
+113,Kumar Suresh,Suresh Kumaran,non_match,transposed_different,yes,0.0,0.2143,0.631,0.5,0.5,0.8771,0.5263
+114,Ram Mohan,Mohan Ram,non_match,transposed_different,no,0.0,0.1111,0.5463,1.0,1.0,1.0,1.0
+115,Vijay Anand,Anand Vijayan,non_match,transposed_different,yes,0.0,0.2308,0.5857,0.5,0.5,0.8771,0.7657
+116,Nair Arun Kumar,Kumar Arun Nambiar,non_match,transposed_different,yes,0.0,0.5556,0.6694,0.6667,0.6667,0.6667,0.44
+117,Shri Rajesh Kumar,Smt. Rajeshwari Kumar,non_match,honorific_masking,yes,0.0,0.75,0.9,0.5,0.5,0.868,0.5228
+118,Dr. Meenakshi Sundaram,Dr. Meenakshi Sundaresan,non_match,honorific_masking,yes,0.0,0.85,0.9589,0.5,0.5,0.866,0.866
+119,Kumari Anita Patel,Smt. Ankita Patel,non_match,honorific_masking,yes,0.0,0.9167,0.9778,0.5,0.5,0.8822,0.6416
+120,Mohammed Salim Jr.,Mohammed Salam Jr.,non_match,honorific_masking,no,0.0,0.9286,0.9714,0.5,0.975,0.975,0.9643

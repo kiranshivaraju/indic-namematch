@@ -1,0 +1,270 @@
+matcher,id,error,score,threshold,resolvable,category,name_a,name_b
+exact,21,FN,0.0,1.0,yes,initials_expanded,S. Kumar,Suresh Kumar
+exact,22,FN,0.0,1.0,yes,initials_expanded,R. K. Sharma,Rajesh Kumar Sharma
+exact,23,FN,0.0,1.0,yes,initials_expanded,A Iyer,Ananya Iyer
+exact,24,FN,0.0,1.0,yes,initials_expanded,P. V. Narasimhan,Padmanabhan Venkat Narasimhan
+exact,25,FN,0.0,1.0,yes,initials_expanded,M. Fatima,Mariam Fatima
+exact,26,FN,0.0,1.0,yes,initials_expanded,K.Balaji,Krishnan Balaji
+exact,27,FN,0.0,1.0,yes,initials_expanded,Suresh K,Suresh Kumar
+exact,28,FN,0.0,1.0,yes,token_reorder,Kumar Suresh,Suresh Kumar
+exact,29,FN,0.0,1.0,yes,token_reorder,Sharma Rajesh Kumar,Rajesh Kumar Sharma
+exact,30,FN,0.0,1.0,yes,token_reorder,Iyer Ananya,Ananya Iyer
+exact,31,FN,0.0,1.0,yes,token_reorder,Menon Priya,Priya Menon
+exact,32,FN,0.0,1.0,yes,token_reorder,Singh Vikram Rathore,Vikram Rathore Singh
+exact,33,FN,0.0,1.0,yes,token_reorder,Reddy Arjun Kumar,Arjun Kumar Reddy
+exact,34,FN,0.0,1.0,yes,transliteration,Mohammed Irfan,Mohammad Irfan
+exact,35,FN,0.0,1.0,yes,transliteration,Muhammad Ali Khan,Mohammed Ali Khan
+exact,36,FN,0.0,1.0,yes,transliteration,Lakshmi Narayanan,Laxmi Narayanan
+exact,37,FN,0.0,1.0,yes,transliteration,Syed Abdul Rahman,Sayyed Abdul Rehman
+exact,38,FN,0.0,1.0,yes,transliteration,Krishna Murthy,Krishnamurthy
+exact,39,FN,0.0,1.0,yes,transliteration,Aashish Bhattacharya,Ashish Bhattacharjee
+exact,40,FN,0.0,1.0,yes,transliteration,Anirban Chowdhury,Anirban Choudhury
+exact,41,FN,0.0,1.0,yes,transliteration,Gauri Shankar Tiwari,Gowri Shankar Tewari
+exact,42,FN,0.0,1.0,yes,middle_name_dropped,Rajesh Kumar Sharma,Rajesh Sharma
+exact,43,FN,0.0,1.0,yes,middle_name_dropped,Vikram Singh Rathore,Vikram Rathore
+exact,44,FN,0.0,1.0,yes,middle_name_dropped,Priya Lakshmi Menon,Priya Menon
+exact,45,FN,0.0,1.0,yes,middle_name_dropped,Mohammed Abdul Kareem,Mohammed Kareem
+exact,46,FN,0.0,1.0,yes,middle_name_dropped,Anjali Devi Patel,Anjali Patel
+exact,47,FN,0.0,1.0,yes,middle_name_dropped,Sanjay Ramesh Gupta,Sanjay Gupta
+exact,48,FN,0.0,1.0,yes,patronymic_convention,R Venkatesan,Ramachandran Venkatesan
+exact,49,FN,0.0,1.0,yes,patronymic_convention,Venkatesan R,R Venkatesan
+exact,50,FN,0.0,1.0,yes,patronymic_convention,T N Seshadri,Tirunellai Narayanan Seshadri
+exact,51,FN,0.0,1.0,yes,patronymic_convention,Nithya B,Nithya Balakrishnan
+exact,58,FN,0.0,1.0,yes,spacing_punctuation,Ram Kumar,Ramkumar
+exact,60,FN,0.0,1.0,yes,spacing_punctuation,Sri Ram Chandran,Sriram Chandran
+exact,61,FN,0.0,1.0,yes,spacing_punctuation,Naga Arjuna Rao,Nagarjuna Rao
+exact,62,FN,0.0,1.0,yes,ocr_noise,Rajesh Kumar,Rajcsh Kumar
+exact,63,FN,0.0,1.0,yes,ocr_noise,Anita Sharma,Anita Shanna
+exact,64,FN,0.0,1.0,yes,ocr_noise,Vikram Singh,Vlkram Singh
+exact,65,FN,0.0,1.0,yes,ocr_noise,Priya Menon,Priya Meno n
+exact,66,FN,0.0,1.0,yes,ocr_noise,Balaji Iyengar,Ba1aji Iyengar
+exact,67,FN,0.0,1.0,no,married_name_change,Priya Menon,Priya Kumar Sharma
+exact,68,FN,0.0,1.0,no,married_name_change,Sunita Patel,Sunita Devi Chauhan
+exact,69,FN,0.0,1.0,no,married_name_change,Ananya Iyer,Ananya Balakrishnan
+exact,70,FN,0.0,1.0,no,married_name_change,Fatima Sheikh,Fatima Ansari
+exact,92,FP,1.0,1.0,no,common_name_collision,Amit Kumar,Amit Kumar
+levenshtein,21,FN,0.5833,0.9375,yes,initials_expanded,S. Kumar,Suresh Kumar
+levenshtein,22,FN,0.5263,0.9375,yes,initials_expanded,R. K. Sharma,Rajesh Kumar Sharma
+levenshtein,23,FN,0.5455,0.9375,yes,initials_expanded,A Iyer,Ananya Iyer
+levenshtein,24,FN,0.4828,0.9375,yes,initials_expanded,P. V. Narasimhan,Padmanabhan Venkat Narasimhan
+levenshtein,25,FN,0.6154,0.9375,yes,initials_expanded,M. Fatima,Mariam Fatima
+levenshtein,26,FN,0.5333,0.9375,yes,initials_expanded,K.Balaji,Krishnan Balaji
+levenshtein,27,FN,0.6667,0.9375,yes,initials_expanded,Suresh K,Suresh Kumar
+levenshtein,28,FN,0.1667,0.9375,yes,token_reorder,Kumar Suresh,Suresh Kumar
+levenshtein,29,FN,0.2632,0.9375,yes,token_reorder,Sharma Rajesh Kumar,Rajesh Kumar Sharma
+levenshtein,30,FN,0.0909,0.9375,yes,token_reorder,Iyer Ananya,Ananya Iyer
+levenshtein,31,FN,0.0909,0.9375,yes,token_reorder,Menon Priya,Priya Menon
+levenshtein,32,FN,0.4,0.9375,yes,token_reorder,Singh Vikram Rathore,Vikram Rathore Singh
+levenshtein,33,FN,0.2941,0.9375,yes,token_reorder,Reddy Arjun Kumar,Arjun Kumar Reddy
+levenshtein,34,FN,0.9286,0.9375,yes,transliteration,Mohammed Irfan,Mohammad Irfan
+levenshtein,35,FN,0.8824,0.9375,yes,transliteration,Muhammad Ali Khan,Mohammed Ali Khan
+levenshtein,36,FN,0.8235,0.9375,yes,transliteration,Lakshmi Narayanan,Laxmi Narayanan
+levenshtein,37,FN,0.8421,0.9375,yes,transliteration,Syed Abdul Rahman,Sayyed Abdul Rehman
+levenshtein,38,FN,0.9286,0.9375,yes,transliteration,Krishna Murthy,Krishnamurthy
+levenshtein,39,FN,0.8,0.9375,yes,transliteration,Aashish Bhattacharya,Ashish Bhattacharjee
+levenshtein,41,FN,0.85,0.9375,yes,transliteration,Gauri Shankar Tiwari,Gowri Shankar Tewari
+levenshtein,42,FN,0.6842,0.9375,yes,middle_name_dropped,Rajesh Kumar Sharma,Rajesh Sharma
+levenshtein,43,FN,0.7,0.9375,yes,middle_name_dropped,Vikram Singh Rathore,Vikram Rathore
+levenshtein,44,FN,0.5789,0.9375,yes,middle_name_dropped,Priya Lakshmi Menon,Priya Menon
+levenshtein,45,FN,0.7143,0.9375,yes,middle_name_dropped,Mohammed Abdul Kareem,Mohammed Kareem
+levenshtein,46,FN,0.7059,0.9375,yes,middle_name_dropped,Anjali Devi Patel,Anjali Patel
+levenshtein,47,FN,0.6316,0.9375,yes,middle_name_dropped,Sanjay Ramesh Gupta,Sanjay Gupta
+levenshtein,48,FN,0.5217,0.9375,yes,patronymic_convention,R Venkatesan,Ramachandran Venkatesan
+levenshtein,49,FN,0.6667,0.9375,yes,patronymic_convention,Venkatesan R,R Venkatesan
+levenshtein,50,FN,0.4138,0.9375,yes,patronymic_convention,T N Seshadri,Tirunellai Narayanan Seshadri
+levenshtein,51,FN,0.4211,0.9375,yes,patronymic_convention,Nithya B,Nithya Balakrishnan
+levenshtein,58,FN,0.8889,0.9375,yes,spacing_punctuation,Ram Kumar,Ramkumar
+levenshtein,61,FN,0.8667,0.9375,yes,spacing_punctuation,Naga Arjuna Rao,Nagarjuna Rao
+levenshtein,62,FN,0.9167,0.9375,yes,ocr_noise,Rajesh Kumar,Rajcsh Kumar
+levenshtein,63,FN,0.8333,0.9375,yes,ocr_noise,Anita Sharma,Anita Shanna
+levenshtein,64,FN,0.9167,0.9375,yes,ocr_noise,Vikram Singh,Vlkram Singh
+levenshtein,65,FN,0.9167,0.9375,yes,ocr_noise,Priya Menon,Priya Meno n
+levenshtein,66,FN,0.9286,0.9375,yes,ocr_noise,Balaji Iyengar,Ba1aji Iyengar
+levenshtein,67,FN,0.3889,0.9375,no,married_name_change,Priya Menon,Priya Kumar Sharma
+levenshtein,68,FN,0.4211,0.9375,no,married_name_change,Sunita Patel,Sunita Devi Chauhan
+levenshtein,69,FN,0.4211,0.9375,no,married_name_change,Ananya Iyer,Ananya Balakrishnan
+levenshtein,70,FN,0.5385,0.9375,no,married_name_change,Fatima Sheikh,Fatima Ansari
+levenshtein,71,FP,0.9474,0.9375,yes,sibling,Rajesh Kumar Sharma,Ramesh Kumar Sharma
+levenshtein,72,FP,0.9474,0.9375,yes,sibling,Anita Suresh Patel,Ankita Suresh Patel
+levenshtein,92,FP,1.0,0.9375,no,common_name_collision,Amit Kumar,Amit Kumar
+jaro_winkler,21,FN,0.7464,0.9833,yes,initials_expanded,S. Kumar,Suresh Kumar
+jaro_winkler,22,FN,0.6431,0.9833,yes,initials_expanded,R. K. Sharma,Rajesh Kumar Sharma
+jaro_winkler,23,FN,0.5051,0.9833,yes,initials_expanded,A Iyer,Ananya Iyer
+jaro_winkler,24,FN,0.553,0.9833,yes,initials_expanded,P. V. Narasimhan,Padmanabhan Venkat Narasimhan
+jaro_winkler,25,FN,0.7721,0.9833,yes,initials_expanded,M. Fatima,Mariam Fatima
+jaro_winkler,26,FN,0.5056,0.9833,yes,initials_expanded,K.Balaji,Krishnan Balaji
+jaro_winkler,27,FN,0.9333,0.9833,yes,initials_expanded,Suresh K,Suresh Kumar
+jaro_winkler,28,FN,0.6111,0.9833,yes,token_reorder,Kumar Suresh,Suresh Kumar
+jaro_winkler,29,FN,0.8421,0.9833,yes,token_reorder,Sharma Rajesh Kumar,Rajesh Kumar Sharma
+jaro_winkler,30,FN,0.5581,0.9833,yes,token_reorder,Iyer Ananya,Ananya Iyer
+jaro_winkler,31,FN,0.2879,0.9833,yes,token_reorder,Menon Priya,Priya Menon
+jaro_winkler,32,FN,0.7333,0.9833,yes,token_reorder,Singh Vikram Rathore,Vikram Rathore Singh
+jaro_winkler,33,FN,0.6893,0.9833,yes,token_reorder,Reddy Arjun Kumar,Arjun Kumar Reddy
+jaro_winkler,34,FN,0.9253,0.9833,yes,transliteration,Mohammed Irfan,Mohammad Irfan
+jaro_winkler,35,FN,0.8394,0.9833,yes,transliteration,Muhammad Ali Khan,Mohammed Ali Khan
+jaro_winkler,36,FN,0.9352,0.9833,yes,transliteration,Lakshmi Narayanan,Laxmi Narayanan
+jaro_winkler,37,FN,0.8625,0.9833,yes,transliteration,Syed Abdul Rahman,Sayyed Abdul Rehman
+jaro_winkler,39,FN,0.7865,0.9833,yes,transliteration,Aashish Bhattacharya,Ashish Bhattacharjee
+jaro_winkler,40,FN,0.9577,0.9833,yes,transliteration,Anirban Chowdhury,Anirban Choudhury
+jaro_winkler,41,FN,0.7688,0.9833,yes,transliteration,Gauri Shankar Tiwari,Gowri Shankar Tewari
+jaro_winkler,42,FN,0.8984,0.9833,yes,middle_name_dropped,Rajesh Kumar Sharma,Rajesh Sharma
+jaro_winkler,43,FN,0.9114,0.9833,yes,middle_name_dropped,Vikram Singh Rathore,Vikram Rathore
+jaro_winkler,44,FN,0.9158,0.9833,yes,middle_name_dropped,Priya Lakshmi Menon,Priya Menon
+jaro_winkler,45,FN,0.9295,0.9833,yes,middle_name_dropped,Mohammed Abdul Kareem,Mohammed Kareem
+jaro_winkler,46,FN,0.9078,0.9833,yes,middle_name_dropped,Anjali Devi Patel,Anjali Patel
+jaro_winkler,47,FN,0.8846,0.9833,yes,middle_name_dropped,Sanjay Ramesh Gupta,Sanjay Gupta
+jaro_winkler,48,FN,0.4758,0.9833,yes,patronymic_convention,R Venkatesan,Ramachandran Venkatesan
+jaro_winkler,49,FN,0.8889,0.9833,yes,patronymic_convention,Venkatesan R,R Venkatesan
+jaro_winkler,50,FN,0.4654,0.9833,yes,patronymic_convention,T N Seshadri,Tirunellai Narayanan Seshadri
+jaro_winkler,51,FN,0.8842,0.9833,yes,patronymic_convention,Nithya B,Nithya Balakrishnan
+jaro_winkler,58,FN,0.9741,0.9833,yes,spacing_punctuation,Ram Kumar,Ramkumar
+jaro_winkler,60,FN,0.9543,0.9833,yes,spacing_punctuation,Sri Ram Chandran,Sriram Chandran
+jaro_winkler,61,FN,0.9118,0.9833,yes,spacing_punctuation,Naga Arjuna Rao,Nagarjuna Rao
+jaro_winkler,62,FN,0.9611,0.9833,yes,ocr_noise,Rajesh Kumar,Rajcsh Kumar
+jaro_winkler,63,FN,0.9333,0.9833,yes,ocr_noise,Anita Sharma,Anita Shanna
+jaro_winkler,64,FN,0.95,0.9833,yes,ocr_noise,Vikram Singh,Vlkram Singh
+jaro_winkler,66,FN,0.9619,0.9833,yes,ocr_noise,Balaji Iyengar,Ba1aji Iyengar
+jaro_winkler,67,FN,0.6751,0.9833,no,married_name_change,Priya Menon,Priya Kumar Sharma
+jaro_winkler,68,FN,0.8225,0.9833,no,married_name_change,Sunita Patel,Sunita Devi Chauhan
+jaro_winkler,69,FN,0.8362,0.9833,no,married_name_change,Ananya Iyer,Ananya Balakrishnan
+jaro_winkler,70,FN,0.8769,0.9833,no,married_name_change,Fatima Sheikh,Fatima Ansari
+jaro_winkler,72,FP,0.986,0.9833,yes,sibling,Anita Suresh Patel,Ankita Suresh Patel
+jaro_winkler,92,FP,1.0,0.9833,no,common_name_collision,Amit Kumar,Amit Kumar
+token_set,21,FN,0.925,1.0,yes,initials_expanded,S. Kumar,Suresh Kumar
+token_set,22,FN,0.9,1.0,yes,initials_expanded,R. K. Sharma,Rajesh Kumar Sharma
+token_set,23,FN,0.925,1.0,yes,initials_expanded,A Iyer,Ananya Iyer
+token_set,24,FN,0.9,1.0,yes,initials_expanded,P. V. Narasimhan,Padmanabhan Venkat Narasimhan
+token_set,25,FN,0.925,1.0,yes,initials_expanded,M. Fatima,Mariam Fatima
+token_set,26,FN,0.925,1.0,yes,initials_expanded,K.Balaji,Krishnan Balaji
+token_set,27,FN,0.925,1.0,yes,initials_expanded,Suresh K,Suresh Kumar
+token_set,34,FN,0.5,1.0,yes,transliteration,Mohammed Irfan,Mohammad Irfan
+token_set,35,FN,0.6667,1.0,yes,transliteration,Muhammad Ali Khan,Mohammed Ali Khan
+token_set,36,FN,0.5,1.0,yes,transliteration,Lakshmi Narayanan,Laxmi Narayanan
+token_set,37,FN,0.3333,1.0,yes,transliteration,Syed Abdul Rahman,Sayyed Abdul Rehman
+token_set,38,FN,0.0,1.0,yes,transliteration,Krishna Murthy,Krishnamurthy
+token_set,39,FN,0.0,1.0,yes,transliteration,Aashish Bhattacharya,Ashish Bhattacharjee
+token_set,40,FN,0.5,1.0,yes,transliteration,Anirban Chowdhury,Anirban Choudhury
+token_set,41,FN,0.3333,1.0,yes,transliteration,Gauri Shankar Tiwari,Gowri Shankar Tewari
+token_set,42,FN,0.8,1.0,yes,middle_name_dropped,Rajesh Kumar Sharma,Rajesh Sharma
+token_set,43,FN,0.8,1.0,yes,middle_name_dropped,Vikram Singh Rathore,Vikram Rathore
+token_set,44,FN,0.8,1.0,yes,middle_name_dropped,Priya Lakshmi Menon,Priya Menon
+token_set,45,FN,0.8,1.0,yes,middle_name_dropped,Mohammed Abdul Kareem,Mohammed Kareem
+token_set,46,FN,0.8,1.0,yes,middle_name_dropped,Anjali Devi Patel,Anjali Patel
+token_set,47,FN,0.8,1.0,yes,middle_name_dropped,Sanjay Ramesh Gupta,Sanjay Gupta
+token_set,48,FN,0.925,1.0,yes,patronymic_convention,R Venkatesan,Ramachandran Venkatesan
+token_set,50,FN,0.9,1.0,yes,patronymic_convention,T N Seshadri,Tirunellai Narayanan Seshadri
+token_set,51,FN,0.925,1.0,yes,patronymic_convention,Nithya B,Nithya Balakrishnan
+token_set,58,FN,0.0,1.0,yes,spacing_punctuation,Ram Kumar,Ramkumar
+token_set,60,FN,0.4,1.0,yes,spacing_punctuation,Sri Ram Chandran,Sriram Chandran
+token_set,61,FN,0.4,1.0,yes,spacing_punctuation,Naga Arjuna Rao,Nagarjuna Rao
+token_set,62,FN,0.5,1.0,yes,ocr_noise,Rajesh Kumar,Rajcsh Kumar
+token_set,63,FN,0.5,1.0,yes,ocr_noise,Anita Sharma,Anita Shanna
+token_set,64,FN,0.5,1.0,yes,ocr_noise,Vikram Singh,Vlkram Singh
+token_set,65,FN,0.4,1.0,yes,ocr_noise,Priya Menon,Priya Meno n
+token_set,66,FN,0.5,1.0,yes,ocr_noise,Balaji Iyengar,Ba1aji Iyengar
+token_set,67,FN,0.4,1.0,no,married_name_change,Priya Menon,Priya Kumar Sharma
+token_set,68,FN,0.4,1.0,no,married_name_change,Sunita Patel,Sunita Devi Chauhan
+token_set,69,FN,0.5,1.0,no,married_name_change,Ananya Iyer,Ananya Balakrishnan
+token_set,70,FN,0.5,1.0,no,married_name_change,Fatima Sheikh,Fatima Ansari
+token_set,92,FP,1.0,1.0,no,common_name_collision,Amit Kumar,Amit Kumar
+token_set,114,FP,1.0,1.0,no,transposed_different,Ram Mohan,Mohan Ram
+phonetic,21,FN,0.925,0.9833,yes,initials_expanded,S. Kumar,Suresh Kumar
+phonetic,22,FN,0.9,0.9833,yes,initials_expanded,R. K. Sharma,Rajesh Kumar Sharma
+phonetic,23,FN,0.925,0.9833,yes,initials_expanded,A Iyer,Ananya Iyer
+phonetic,24,FN,0.9,0.9833,yes,initials_expanded,P. V. Narasimhan,Padmanabhan Venkat Narasimhan
+phonetic,25,FN,0.925,0.9833,yes,initials_expanded,M. Fatima,Mariam Fatima
+phonetic,26,FN,0.925,0.9833,yes,initials_expanded,K.Balaji,Krishnan Balaji
+phonetic,27,FN,0.925,0.9833,yes,initials_expanded,Suresh K,Suresh Kumar
+phonetic,34,FN,0.975,0.9833,yes,transliteration,Mohammed Irfan,Mohammad Irfan
+phonetic,36,FN,0.975,0.9833,yes,transliteration,Lakshmi Narayanan,Laxmi Narayanan
+phonetic,37,FN,0.65,0.9833,yes,transliteration,Syed Abdul Rahman,Sayyed Abdul Rehman
+phonetic,38,FN,0.0,0.9833,yes,transliteration,Krishna Murthy,Krishnamurthy
+phonetic,39,FN,0.95,0.9833,yes,transliteration,Aashish Bhattacharya,Ashish Bhattacharjee
+phonetic,40,FN,0.975,0.9833,yes,transliteration,Anirban Chowdhury,Anirban Choudhury
+phonetic,41,FN,0.9667,0.9833,yes,transliteration,Gauri Shankar Tiwari,Gowri Shankar Tewari
+phonetic,42,FN,0.8,0.9833,yes,middle_name_dropped,Rajesh Kumar Sharma,Rajesh Sharma
+phonetic,43,FN,0.8,0.9833,yes,middle_name_dropped,Vikram Singh Rathore,Vikram Rathore
+phonetic,44,FN,0.8,0.9833,yes,middle_name_dropped,Priya Lakshmi Menon,Priya Menon
+phonetic,45,FN,0.8,0.9833,yes,middle_name_dropped,Mohammed Abdul Kareem,Mohammed Kareem
+phonetic,46,FN,0.8,0.9833,yes,middle_name_dropped,Anjali Devi Patel,Anjali Patel
+phonetic,47,FN,0.8,0.9833,yes,middle_name_dropped,Sanjay Ramesh Gupta,Sanjay Gupta
+phonetic,48,FN,0.925,0.9833,yes,patronymic_convention,R Venkatesan,Ramachandran Venkatesan
+phonetic,50,FN,0.9,0.9833,yes,patronymic_convention,T N Seshadri,Tirunellai Narayanan Seshadri
+phonetic,51,FN,0.925,0.9833,yes,patronymic_convention,Nithya B,Nithya Balakrishnan
+phonetic,58,FN,0.0,0.9833,yes,spacing_punctuation,Ram Kumar,Ramkumar
+phonetic,60,FN,0.4,0.9833,yes,spacing_punctuation,Sri Ram Chandran,Sriram Chandran
+phonetic,61,FN,0.4,0.9833,yes,spacing_punctuation,Naga Arjuna Rao,Nagarjuna Rao
+phonetic,62,FN,0.5,0.9833,yes,ocr_noise,Rajesh Kumar,Rajcsh Kumar
+phonetic,63,FN,0.5,0.9833,yes,ocr_noise,Anita Sharma,Anita Shanna
+phonetic,64,FN,0.5,0.9833,yes,ocr_noise,Vikram Singh,Vlkram Singh
+phonetic,65,FN,0.4,0.9833,yes,ocr_noise,Priya Menon,Priya Meno n
+phonetic,66,FN,0.5,0.9833,yes,ocr_noise,Balaji Iyengar,Ba1aji Iyengar
+phonetic,67,FN,0.4,0.9833,no,married_name_change,Priya Menon,Priya Kumar Sharma
+phonetic,68,FN,0.4,0.9833,no,married_name_change,Sunita Patel,Sunita Devi Chauhan
+phonetic,69,FN,0.5,0.9833,no,married_name_change,Ananya Iyer,Ananya Balakrishnan
+phonetic,70,FN,0.5,0.9833,no,married_name_change,Fatima Sheikh,Fatima Ansari
+phonetic,92,FP,1.0,0.9833,no,common_name_collision,Amit Kumar,Amit Kumar
+phonetic,114,FP,1.0,0.9833,no,transposed_different,Ram Mohan,Mohan Ram
+hybrid,21,FN,0.925,0.9833,yes,initials_expanded,S. Kumar,Suresh Kumar
+hybrid,22,FN,0.9,0.9833,yes,initials_expanded,R. K. Sharma,Rajesh Kumar Sharma
+hybrid,23,FN,0.925,0.9833,yes,initials_expanded,A Iyer,Ananya Iyer
+hybrid,24,FN,0.9,0.9833,yes,initials_expanded,P. V. Narasimhan,Padmanabhan Venkat Narasimhan
+hybrid,25,FN,0.925,0.9833,yes,initials_expanded,M. Fatima,Mariam Fatima
+hybrid,26,FN,0.925,0.9833,yes,initials_expanded,K.Balaji,Krishnan Balaji
+hybrid,27,FN,0.925,0.9833,yes,initials_expanded,Suresh K,Suresh Kumar
+hybrid,34,FN,0.975,0.9833,yes,transliteration,Mohammed Irfan,Mohammad Irfan
+hybrid,36,FN,0.975,0.9833,yes,transliteration,Lakshmi Narayanan,Laxmi Narayanan
+hybrid,37,FN,0.89,0.9833,yes,transliteration,Syed Abdul Rahman,Sayyed Abdul Rehman
+hybrid,39,FN,0.95,0.9833,yes,transliteration,Aashish Bhattacharya,Ashish Bhattacharjee
+hybrid,40,FN,0.975,0.9833,yes,transliteration,Anirban Chowdhury,Anirban Choudhury
+hybrid,41,FN,0.9667,0.9833,yes,transliteration,Gauri Shankar Tiwari,Gowri Shankar Tewari
+hybrid,42,FN,0.8,0.9833,yes,middle_name_dropped,Rajesh Kumar Sharma,Rajesh Sharma
+hybrid,43,FN,0.8,0.9833,yes,middle_name_dropped,Vikram Singh Rathore,Vikram Rathore
+hybrid,44,FN,0.8,0.9833,yes,middle_name_dropped,Priya Lakshmi Menon,Priya Menon
+hybrid,45,FN,0.8,0.9833,yes,middle_name_dropped,Mohammed Abdul Kareem,Mohammed Kareem
+hybrid,46,FN,0.8,0.9833,yes,middle_name_dropped,Anjali Devi Patel,Anjali Patel
+hybrid,47,FN,0.8,0.9833,yes,middle_name_dropped,Sanjay Ramesh Gupta,Sanjay Gupta
+hybrid,48,FN,0.925,0.9833,yes,patronymic_convention,R Venkatesan,Ramachandran Venkatesan
+hybrid,50,FN,0.9,0.9833,yes,patronymic_convention,T N Seshadri,Tirunellai Narayanan Seshadri
+hybrid,51,FN,0.925,0.9833,yes,patronymic_convention,Nithya B,Nithya Balakrishnan
+hybrid,61,FN,0.9231,0.9833,yes,spacing_punctuation,Naga Arjuna Rao,Nagarjuna Rao
+hybrid,62,FN,0.8689,0.9833,yes,ocr_noise,Rajesh Kumar,Rajcsh Kumar
+hybrid,63,FN,0.5,0.9833,yes,ocr_noise,Anita Sharma,Anita Shanna
+hybrid,64,FN,0.86,0.9833,yes,ocr_noise,Vikram Singh,Vlkram Singh
+hybrid,66,FN,0.8644,0.9833,yes,ocr_noise,Balaji Iyengar,Ba1aji Iyengar
+hybrid,67,FN,0.4,0.9833,no,married_name_change,Priya Menon,Priya Kumar Sharma
+hybrid,68,FN,0.4,0.9833,no,married_name_change,Sunita Patel,Sunita Devi Chauhan
+hybrid,69,FN,0.5,0.9833,no,married_name_change,Ananya Iyer,Ananya Balakrishnan
+hybrid,70,FN,0.5,0.9833,no,married_name_change,Fatima Sheikh,Fatima Ansari
+hybrid,92,FP,1.0,0.9833,no,common_name_collision,Amit Kumar,Amit Kumar
+hybrid,114,FP,1.0,0.9833,no,transposed_different,Ram Mohan,Mohan Ram
+rarity_weighted,21,FN,0.6529,0.9667,yes,initials_expanded,S. Kumar,Suresh Kumar
+rarity_weighted,22,FN,0.7939,0.9667,yes,initials_expanded,R. K. Sharma,Rajesh Kumar Sharma
+rarity_weighted,23,FN,0.541,0.9667,yes,initials_expanded,A Iyer,Ananya Iyer
+rarity_weighted,24,FN,0.5837,0.9667,yes,initials_expanded,P. V. Narasimhan,Padmanabhan Venkat Narasimhan
+rarity_weighted,25,FN,0.7159,0.9667,yes,initials_expanded,M. Fatima,Mariam Fatima
+rarity_weighted,26,FN,0.7159,0.9667,yes,initials_expanded,K.Balaji,Krishnan Balaji
+rarity_weighted,27,FN,0.9591,0.9667,yes,initials_expanded,Suresh K,Suresh Kumar
+rarity_weighted,35,FN,0.7867,0.9667,yes,transliteration,Muhammad Ali Khan,Mohammed Ali Khan
+rarity_weighted,37,FN,0.8289,0.9667,yes,transliteration,Syed Abdul Rahman,Sayyed Abdul Rehman
+rarity_weighted,39,FN,0.95,0.9667,yes,transliteration,Aashish Bhattacharya,Ashish Bhattacharjee
+rarity_weighted,42,FN,0.9143,0.9667,yes,middle_name_dropped,Rajesh Kumar Sharma,Rajesh Sharma
+rarity_weighted,43,FN,0.9639,0.9667,yes,middle_name_dropped,Vikram Singh Rathore,Vikram Rathore
+rarity_weighted,44,FN,0.6154,0.9667,yes,middle_name_dropped,Priya Lakshmi Menon,Priya Menon
+rarity_weighted,45,FN,0.7368,0.9667,yes,middle_name_dropped,Mohammed Abdul Kareem,Mohammed Kareem
+rarity_weighted,46,FN,0.9492,0.9667,yes,middle_name_dropped,Anjali Devi Patel,Anjali Patel
+rarity_weighted,47,FN,0.8,0.9667,yes,middle_name_dropped,Sanjay Ramesh Gupta,Sanjay Gupta
+rarity_weighted,48,FN,0.7159,0.9667,yes,patronymic_convention,R Venkatesan,Ramachandran Venkatesan
+rarity_weighted,50,FN,0.5837,0.9667,yes,patronymic_convention,T N Seshadri,Tirunellai Narayanan Seshadri
+rarity_weighted,51,FN,0.7159,0.9667,yes,patronymic_convention,Nithya B,Nithya Balakrishnan
+rarity_weighted,61,FN,0.9231,0.9667,yes,spacing_punctuation,Naga Arjuna Rao,Nagarjuna Rao
+rarity_weighted,62,FN,0.5237,0.9667,yes,ocr_noise,Rajesh Kumar,Rajcsh Kumar
+rarity_weighted,63,FN,0.3636,0.9667,yes,ocr_noise,Anita Sharma,Anita Shanna
+rarity_weighted,64,FN,0.7565,0.9667,yes,ocr_noise,Vikram Singh,Vlkram Singh
+rarity_weighted,66,FN,0.8644,0.9667,yes,ocr_noise,Balaji Iyengar,Ba1aji Iyengar
+rarity_weighted,67,FN,0.4571,0.9667,no,married_name_change,Priya Menon,Priya Kumar Sharma
+rarity_weighted,68,FN,0.4571,0.9667,no,married_name_change,Sunita Patel,Sunita Devi Chauhan
+rarity_weighted,69,FN,0.5882,0.9667,no,married_name_change,Ananya Iyer,Ananya Balakrishnan
+rarity_weighted,70,FN,0.7143,0.9667,no,married_name_change,Fatima Sheikh,Fatima Ansari
+rarity_weighted,92,FP,1.0,0.9667,no,common_name_collision,Amit Kumar,Amit Kumar
+rarity_weighted,114,FP,1.0,0.9667,no,transposed_different,Ram Mohan,Mohan Ram

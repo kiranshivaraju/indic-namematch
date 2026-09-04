@@ -1,0 +1,68 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "indic-namematch"
+version = "0.1.0"
+description = "Name matching for Indian identity documents: initials, transliteration, patronymics, honorifics and OCR noise."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { file = "LICENSE" }
+authors = [{ name = "Kiran Shivaraju" }]
+keywords = [
+    "name-matching", "fuzzy-matching", "kyc", "identity-verification",
+    "record-linkage", "entity-resolution", "transliteration", "india", "soundex",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Natural Language :: English",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Information Analysis",
+    "Topic :: Text Processing :: Linguistic",
+    "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "pytest-cov", "mypy", "ruff"]
+
+[project.urls]
+Homepage = "https://github.com/kirans00/indic-namematch"
+Issues = "https://github.com/kirans00/indic-namematch/issues"
+
+[project.scripts]
+indic-namematch = "indic_namematch.cli:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/indic_namematch"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests", "src"]
+addopts = "--doctest-modules"
+
+[tool.coverage.run]
+source = ["indic_namematch"]
+
+[tool.coverage.report]
+exclude_lines = [
+    "pragma: no cover",
+    "if __name__ == .__main__.:",
+]
+
+[tool.ruff]
+line-length = 100
+target-version = "py38"
+
+[tool.mypy]
+python_version = "3.10"
+strict = true

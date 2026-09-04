@@ -1,0 +1,116 @@
+================================================================================================
+INDIC-NAMEMATCH BENCHMARK
+================================================================================================
+pairs              : 120 (60 match / 60 non_match)
+undecidable pairs  : 18 (no correct answer exists from the strings alone)
+metric             : F-beta with beta=0.5, precision weighted above recall
+
+------------------------------------------------------------------------------------------------
+THREE-BAND: thresholds pinned so no DECIDABLE pair is auto-decided wrongly
+------------------------------------------------------------------------------------------------
+matcher               reject<  approve>=  approve%  review%  reject%  unavoid.FP  unavoid.FN
+------------------------------------------------------------------------------------------------
+exact                   0.000      0.000     28.3%    85.0%     0.0%           1           0
+levenshtein             0.091      0.947     28.3%    84.2%     0.8%           1           0
+jaro_winkler            0.288      0.986     28.3%    85.0%     0.0%           1           0
+token_set               0.000      0.800     56.7%    65.8%     0.0%           7           0
+phonetic                0.000      0.800     66.7%    59.2%     0.0%           9           0
+hybrid                  0.500      0.921     70.0%    47.5%    10.8%           8           2
+rarity_weighted         0.364      0.886     63.3%    52.5%    12.5%           4           0
+
+  All matchers verified: zero avoidable errors inside the automatic bands.
+
+  exact unavoidable auto-errors:
+    FP id= 92 'Amit Kumar' vs 'Amit Kumar'  [common_name_collision]
+  levenshtein unavoidable auto-errors:
+    FP id= 92 'Amit Kumar' vs 'Amit Kumar'  [common_name_collision]
+  jaro_winkler unavoidable auto-errors:
+    FP id= 92 'Amit Kumar' vs 'Amit Kumar'  [common_name_collision]
+  token_set unavoidable auto-errors:
+    FP id= 87 'S Kumar' vs 'Sunita Kumar'  [initial_collision]
+    FP id= 88 'R K Sharma' vs 'Rekha Kamala Sharma'  [initial_collision]
+    FP id= 89 'A Iyer' vs 'Arvind Iyer'  [initial_collision]
+    FP id= 90 'M Fatima' vs 'Mohsina Fatima'  [initial_collision]
+    FP id= 91 'P Reddy' vs 'Prakash Reddy'  [initial_collision]
+    FP id= 92 'Amit Kumar' vs 'Amit Kumar'  [common_name_collision]
+    FP id=114 'Ram Mohan' vs 'Mohan Ram'  [transposed_different]
+  phonetic unavoidable auto-errors:
+    FP id= 86 'Vikas Chauhan' vs 'Vikash Chauhan'  [one_edit_apart]
+    FP id= 87 'S Kumar' vs 'Sunita Kumar'  [initial_collision]
+    FP id= 88 'R K Sharma' vs 'Rekha Kamala Sharma'  [initial_collision]
+    FP id= 89 'A Iyer' vs 'Arvind Iyer'  [initial_collision]
+    FP id= 90 'M Fatima' vs 'Mohsina Fatima'  [initial_collision]
+    FP id= 91 'P Reddy' vs 'Prakash Reddy'  [initial_collision]
+    FP id= 92 'Amit Kumar' vs 'Amit Kumar'  [common_name_collision]
+    FP id=114 'Ram Mohan' vs 'Mohan Ram'  [transposed_different]
+    FP id=120 'Mohammed Salim Jr.' vs 'Mohammed Salam Jr.'  [honorific_masking]
+  hybrid unavoidable auto-errors:
+    FP id= 86 'Vikas Chauhan' vs 'Vikash Chauhan'  [one_edit_apart]
+    FP id= 87 'S Kumar' vs 'Sunita Kumar'  [initial_collision]
+    FP id= 89 'A Iyer' vs 'Arvind Iyer'  [initial_collision]
+    FP id= 90 'M Fatima' vs 'Mohsina Fatima'  [initial_collision]
+    FP id= 91 'P Reddy' vs 'Prakash Reddy'  [initial_collision]
+    FP id= 92 'Amit Kumar' vs 'Amit Kumar'  [common_name_collision]
+    FP id=114 'Ram Mohan' vs 'Mohan Ram'  [transposed_different]
+    FP id=120 'Mohammed Salim Jr.' vs 'Mohammed Salam Jr.'  [honorific_masking]
+    FN id= 67 'Priya Menon' vs 'Priya Kumar Sharma'  [married_name_change]
+    FN id= 68 'Sunita Patel' vs 'Sunita Devi Chauhan'  [married_name_change]
+  rarity_weighted unavoidable auto-errors:
+    FP id= 86 'Vikas Chauhan' vs 'Vikash Chauhan'  [one_edit_apart]
+    FP id= 92 'Amit Kumar' vs 'Amit Kumar'  [common_name_collision]
+    FP id=114 'Ram Mohan' vs 'Mohan Ram'  [transposed_different]
+    FP id=120 'Mohammed Salim Jr.' vs 'Mohammed Salam Jr.'  [honorific_masking]
+
+------------------------------------------------------------------------------------------------
+SINGLE THRESHOLD: max recall subject to FPR <= 5%
+------------------------------------------------------------------------------------------------
+matcher                  thr    prec  recall    F0.5     FPR   FP   FN     acc
+------------------------------------------------------------------------------------------------
+exact                  1.000   0.944   0.283   0.644   0.017    1   43   0.633
+levenshtein            0.938   0.864   0.317   0.642   0.050    3   41   0.633
+jaro_winkler           0.983   0.905   0.317   0.660   0.033    2   41   0.642
+token_set              1.000   0.923   0.400   0.732   0.033    2   36   0.683
+phonetic               0.983   0.926   0.417   0.744   0.033    2   35   0.692
+hybrid                 0.983   0.935   0.483   0.788   0.033    2   31   0.725
+rarity_weighted        0.967   0.941   0.533   0.816   0.033    2   28   0.750
+
+------------------------------------------------------------------------------------------------
+RECALL AT EACH FPR BUDGET: genuine traffic auto-approved per unit of risk
+------------------------------------------------------------------------------------------------
+matcher                    FPR<=1%       FPR<=2%       FPR<=5%      FPR<=10%
+------------------------------------------------------------------------------------------------
+exact                        0.000         0.283         0.283         0.283
+levenshtein                  0.000         0.283         0.317         0.367
+jaro_winkler                 0.000         0.283         0.317         0.333
+token_set                    0.000         0.000         0.400         0.517
+phonetic                     0.000         0.000         0.417         0.500
+hybrid                       0.000         0.000         0.483         0.567
+rarity_weighted              0.000         0.000         0.533         0.633
+
+------------------------------------------------------------------------------------------------
+PER-CATEGORY ACCURACY at the single-threshold operating point
+------------------------------------------------------------------------------------------------
+category                   n          exact    levenshtein   jaro_winkler      token_set       phonetic         hybrid  rarity_weight
+------------------------------------------------------------------------------------------------
+common_name_collision      5            4/5            4/5            4/5            4/5            4/5            4/5            4/5
+control_negative          10          10/10          10/10          10/10          10/10          10/10          10/10          10/10
+control_positive          10          10/10          10/10          10/10          10/10          10/10          10/10          10/10
+gender_variant             4            4/4            4/4            4/4            4/4            4/4            4/4            4/4
+honorific_masking          4            4/4            4/4            4/4            4/4            4/4            4/4            4/4
+honorific_suffix           5            5/5            5/5            5/5            5/5            5/5            5/5            5/5
+initial_collision          5            5/5            5/5            5/5            5/5            5/5            5/5            5/5
+initials_expanded          7            0/7            0/7            0/7            0/7            0/7            0/7            0/7
+married_name_change        4            0/4            0/4            0/4            0/4            0/4            0/4            0/4
+middle_name_dropped        6            0/6            0/6            0/6            0/6            0/6            0/6            0/6
+ocr_noise                  5            0/5            0/5            1/5            0/5            0/5            1/5            1/5
+one_edit_apart             8            8/8            8/8            8/8            8/8            8/8            8/8            8/8
+patronymic_convention      5            1/5            1/5            1/5            2/5            2/5            2/5            2/5
+shared_common_surname      5            5/5            5/5            5/5            5/5            5/5            5/5            5/5
+sibling                    8            8/8            6/8            7/8            8/8            8/8            8/8            8/8
+spacing_punctuation        4            1/4            2/4            1/4            1/4            1/4            3/4            3/4
+spouse_shared_surname      4            4/4            4/4            4/4            4/4            4/4            4/4            4/4
+subset_token               3            3/3            3/3            3/3            3/3            3/3            3/3            3/3
+token_reorder              6            0/6            0/6            0/6            6/6            6/6            6/6            6/6
+transliteration            8            0/8            1/8            1/8            0/8            1/8            2/8            5/8
+transposed_different       4            4/4            4/4            4/4            3/4            3/4            3/4            3/4
+
