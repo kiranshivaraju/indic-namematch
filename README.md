@@ -1,5 +1,10 @@
 # indic-namematch
 
+[![CI](https://github.com/kirans00/indic-namematch/actions/workflows/ci.yml/badge.svg)](https://github.com/kirans00/indic-namematch/actions/workflows/ci.yml)
+[![PyPI](https://img.shields.io/pypi/v/indic-namematch.svg)](https://pypi.org/project/indic-namematch/)
+[![Python](https://img.shields.io/pypi/pyversions/indic-namematch.svg)](https://pypi.org/project/indic-namematch/)
+[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+
 Matching person names across Indian identity documents.
 
 The same person's name is written differently on a PAN card, an Aadhaar, a passport and a
@@ -162,6 +167,11 @@ ceiling on what any string algorithm can achieve. See `benchmark/DATASET.md`.
 * Name matching alone cannot close identity. It is one signal beside PAN, date of birth and
   face match, and it should be allowed to abstain.
 
+## Contributing
+
+New benchmark rows are the most valuable contribution, particularly ones that some
+reasonable algorithm gets wrong. See [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## License
 
-MIT
+MIT. See [LICENSE](LICENSE).
