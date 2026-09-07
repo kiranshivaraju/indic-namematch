@@ -57,7 +57,7 @@ Any change to what a matcher outputs will fail `tests/test_regression.py`. That 
 deliberate. If the change is intentional, regenerate `tests/expected_scores.json` and
 `tests/expected_benchmark.json` in the same commit so the diff shows what moved.
 
-Please also check the mutation sweep still bites. Every tuning constant in `matchers.py`
+Please also check the mutation sweep still bites. Every tuning constant in `src/indic_namematch/matchers.py`
 should break at least one test when nudged:
 
 ```bash

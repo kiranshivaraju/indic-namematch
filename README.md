@@ -27,11 +27,15 @@ m.score("Rajesh Kumar Sharma", "Ramesh Kumar Sharma")  # 0.886  two brothers
 m.score("S. Kumar", "Sunita Kumar")                    # 0.653  not the same person
 ```
 
-**Pure standard library. No dependencies.**
+## Installation
+
+**Pure standard library. No dependencies, no build step.**
 
 ```bash
 pip install indic-namematch
 ```
+
+Python 3.8 or newer.
 
 ## Three bands, not two
 
@@ -166,6 +170,26 @@ ceiling on what any string algorithm can achieve. See `benchmark/DATASET.md`.
   syllable guard fixes that without costing anything on real transliteration variants.
 * Name matching alone cannot close identity. It is one signal beside PAN, date of birth and
   face match, and it should be allowed to abstain.
+
+## Project layout
+
+```
+src/indic_namematch/
+  normalize.py    honorifics, S/o markers, unicode, tokenising
+  metrics.py      Levenshtein and Jaro-Winkler, implemented from scratch
+  phonetics.py    Soundex plus the syllable guard
+  rarity.py       RarityTable, the Fellegi-Sunter weighting
+  alignment.py    token pairing and coverage
+  matchers.py     the seven algorithms
+  bands.py        Decision, Bands, derive()
+  cli.py          the indic-namematch command
+benchmark/
+  name_pairs.csv  120 labelled pairs across 21 categories
+  DATASET.md      how it was built, the labelling policy, its known ceiling
+  evaluate.py     the harness
+  results/        regenerated on every run
+tests/            253 tests, 100% coverage
+```
 
 ## Contributing
 

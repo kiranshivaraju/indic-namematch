@@ -4,6 +4,24 @@ All notable changes to this project are documented here. The format follows
 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to
 [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.1] - 2026-09-07
+
+Packaging and documentation only. No behaviour change: every score, threshold and
+benchmark number is identical to 0.1.0.
+
+### Fixed
+
+- License metadata used the deprecated file form, so PyPI displayed the entire MIT text
+  where the sidebar expects an identifier. Now declared as the SPDX expression `MIT`
+  (PEP 639), which also removes the now-redundant `License :: OSI Approved` classifier.
+- `CONTRIBUTING.md` referred to `matchers.py` rather than its real path,
+  `src/indic_namematch/matchers.py`.
+
+### Added
+
+- `Source`, `Changelog` and `Benchmark` project URLs, which become sidebar links on PyPI.
+- An explicit **Installation** heading in the README, and a **Project layout** section.
+
 ## [0.1.0] - 2026-09-07
 
 First release.

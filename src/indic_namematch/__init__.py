@@ -40,7 +40,7 @@ from .normalize import normalize, tokenize
 from .phonetics import phonetic_key, same_sound, soundex, syllable_count
 from .rarity import RarityTable
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 
 __all__ = [
     "REGISTRY",
