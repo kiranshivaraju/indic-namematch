@@ -8,7 +8,7 @@ Two kinds of contribution are especially useful: **benchmark rows** and **matche
 git clone https://github.com/kiranshivaraju/indic-namematch
 cd indic-namematch
 pip install -e ".[dev]"
-pytest -q
+python3 -m pytest -q
 ```
 
 ## Adding benchmark rows
@@ -28,8 +28,8 @@ Append to `benchmark/name_pairs.csv` with the next free `id`, and:
 4. **Prefer hard negatives.** Easy ones inflate precision and teach nothing.
 5. Regenerate the pins in the same commit:
    ```bash
-   python benchmark/evaluate.py
-   python -c "import json,csv;from indic_namematch.matchers import REGISTRY;\
+   python3 benchmark/evaluate.py
+   python3 -c "import json,csv;from indic_namematch.matchers import REGISTRY;\
    rows=list(csv.DictReader(open('benchmark/name_pairs.csv')));\
    json.dump({n:{r['id']:round(f(r['name_a'],r['name_b']),9) for r in rows} for n,f in REGISTRY.items()},\
    open('tests/expected_scores.json','w'),indent=1,sort_keys=True)"
@@ -62,17 +62,17 @@ should break at least one test when nudged:
 
 ```bash
 sed -i '' 's/^PHONETIC = 0.95$/PHONETIC = 0.93/' src/indic_namematch/matchers.py
-pytest -q          # must fail
+python3 -m pytest -q          # must fail
 git checkout src/indic_namematch/matchers.py
 ```
 
 ## Before opening a PR
 
 ```bash
-pytest -q
-ruff check src tests benchmark
-mypy src
-python benchmark/evaluate.py
+python3 -m pytest -q
+python3 -m ruff check src tests benchmark
+python3 -m mypy src
+python3 benchmark/evaluate.py
 ```
 
 ## Scope
