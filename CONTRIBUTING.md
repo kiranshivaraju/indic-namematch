@@ -5,7 +5,7 @@ Two kinds of contribution are especially useful: **benchmark rows** and **matche
 ## Setup
 
 ```bash
-git clone https://github.com/kirans00/indic-namematch
+git clone https://github.com/kiranshivaraju/indic-namematch
 cd indic-namematch
 pip install -e ".[dev]"
 pytest -q

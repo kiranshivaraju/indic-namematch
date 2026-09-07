@@ -1,6 +1,6 @@
 # indic-namematch
 
-[![CI](https://github.com/kirans00/indic-namematch/actions/workflows/ci.yml/badge.svg)](https://github.com/kirans00/indic-namematch/actions/workflows/ci.yml)
+[![CI](https://github.com/kiranshivaraju/indic-namematch/actions/workflows/ci.yml/badge.svg)](https://github.com/kiranshivaraju/indic-namematch/actions/workflows/ci.yml)
 [![PyPI](https://img.shields.io/pypi/v/indic-namematch.svg)](https://pypi.org/project/indic-namematch/)
 [![Python](https://img.shields.io/pypi/pyversions/indic-namematch.svg)](https://pypi.org/project/indic-namematch/)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
