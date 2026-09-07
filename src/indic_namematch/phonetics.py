@@ -35,11 +35,11 @@ _VOWELS: FrozenSet[str] = frozenset("aeiou")
 #   6  r                the R sound
 # Vowels plus h, w and y are dropped: they are what varies most between spellings.
 _SOUNDEX_CLASS = {
-    **{c: "1" for c in "bfpv"},
-    **{c: "2" for c in "cgjkqsxz"},
-    **{c: "3" for c in "dt"},
+    **dict.fromkeys("bfpv", "1"),
+    **dict.fromkeys("cgjkqsxz", "2"),
+    **dict.fromkeys("dt", "3"),
     "l": "4",
-    **{c: "5" for c in "mn"},
+    **dict.fromkeys("mn", "5"),
     "r": "6",
 }
 

@@ -9,7 +9,14 @@ from __future__ import annotations
 import pytest
 
 from indic_namematch.matchers import (
-    cascade, exact, hybrid, jaro_winkler, levenshtein, phonetic, rarity_weighted, token_set,
+    cascade,
+    exact,
+    hybrid,
+    jaro_winkler,
+    levenshtein,
+    phonetic,
+    rarity_weighted,
+    token_set,
 )
 
 

@@ -69,7 +69,7 @@ def test_contentless_names_never_match(name, fn):
     for a in contentless:
         assert tokenize(a) == [], f"test assumption broken: {a!r} still has tokens"
         assert fn(a, a) == 0.0, f"{name} scored contentless {a!r} against itself as a match"
-        for b in contentless + ["Suresh Kumar"]:
+        for b in [*contentless, "Suresh Kumar"]:
             assert fn(a, b) == 0.0, f"{name} matched contentless {a!r} against {b!r}"
 
 

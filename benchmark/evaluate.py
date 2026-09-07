@@ -105,7 +105,8 @@ def confusion(scores, pairs, threshold):
 
 def sweep(scores, pairs):
     uniq = sorted(set(scores))
-    return [(t, metrics(*confusion(scores, pairs, t))) for t in uniq + [max(uniq) + 1e-9]]
+    candidates = [*uniq, max(uniq) + 1e-9]
+    return [(t, metrics(*confusion(scores, pairs, t))) for t in candidates]
 
 
 def best_under_budget(curve, budget):

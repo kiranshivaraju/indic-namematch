@@ -43,24 +43,24 @@ from .rarity import RarityTable
 __version__ = "0.1.0"
 
 __all__ = [
-    "NameMatcher",
-    "Explanation",
-    "Decision",
-    "Bands",
-    "RarityTable",
-    "Alignment",
-    "TokenMatch",
-    "align",
-    "is_initial_of",
     "REGISTRY",
+    "Alignment",
+    "Bands",
+    "Decision",
+    "Explanation",
+    "NameMatcher",
+    "RarityTable",
+    "TokenMatch",
+    "__version__",
+    "align",
+    "derive",
+    "is_initial_of",
     "normalize",
-    "tokenize",
+    "phonetic_key",
+    "same_sound",
     "soundex",
     "syllable_count",
-    "same_sound",
-    "phonetic_key",
-    "derive",
-    "__version__",
+    "tokenize",
 ]
 
 

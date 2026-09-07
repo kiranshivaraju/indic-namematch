@@ -45,7 +45,9 @@ def normalize_basic(name: str) -> str:
     """
     name = unicodedata.normalize("NFKD", name)
     name = "".join(c for c in name if not unicodedata.combining(c))
-    name = name.casefold().replace("'", "").replace("’", "")
+    # Both apostrophe forms: extraction and copy-paste each produce one, and D'Souza must
+    # normalise identically to D\u2019Souza.
+    name = name.casefold().replace("'", "").replace("\u2019", "")
     name = _PUNCT.sub(" ", name)
     parts = [
         t for t in _WS.split(name.strip())

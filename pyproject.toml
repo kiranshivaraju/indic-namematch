@@ -34,7 +34,12 @@ classifiers = [
 dependencies = []
 
 [project.optional-dependencies]
-dev = ["pytest>=7.0", "pytest-cov", "mypy", "ruff"]
+dev = [
+    "pytest>=7.0,<9",
+    "pytest-cov>=4",
+    "mypy>=1.11,<2",
+    "ruff>=0.13,<0.14",
+]
 
 [project.urls]
 Homepage = "https://github.com/kiranshivaraju/indic-namematch"
@@ -62,6 +67,27 @@ exclude_lines = [
 [tool.ruff]
 line-length = 100
 target-version = "py38"
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "F",    # pyflakes
+    "I",    # import sorting
+    "UP",   # pyupgrade
+    "B",    # bugbear
+    "C4",   # comprehensions
+    "SIM",  # simplify
+    "RUF",  # ruff-specific
+]
+ignore = [
+    "UP006",  # PEP 585 generics need 3.9; this package supports 3.8
+    "UP035",  # same, typing.List and friends are still required
+    "UP045",  # PEP 604 unions need 3.10
+    "UP007",  # same
+]
+
+[tool.ruff.lint.per-file-ignores]
+"tests/*" = ["E501"]
 
 [tool.mypy]
 python_version = "3.10"

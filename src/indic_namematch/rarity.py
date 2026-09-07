@@ -60,7 +60,7 @@ class RarityTable:
     0.15
     """
 
-    __slots__ = ("_weights", "_default", "_initial_weight")
+    __slots__ = ("_default", "_initial_weight", "_weights")
 
     def __init__(
         self,
@@ -69,8 +69,8 @@ class RarityTable:
         initial_weight: float = _NEAR_ZERO_WEIGHT,
     ) -> None:
         if weights is None:
-            weights = {t: _NEAR_ZERO_WEIGHT for t in _NEAR_ZERO}
-            weights.update({t: _COMMON_WEIGHT for t in _COMMON})
+            weights = dict.fromkeys(_NEAR_ZERO, _NEAR_ZERO_WEIGHT)
+            weights.update(dict.fromkeys(_COMMON, _COMMON_WEIGHT))
         self._weights: Dict[str, float] = dict(weights)
         self._default = default
         self._initial_weight = initial_weight
@@ -91,7 +91,7 @@ class RarityTable:
         cls,
         counts: Mapping[str, int],
         min_weight: float = MIN_WEIGHT,
-    ) -> "RarityTable":
+    ) -> RarityTable:
         """Build a measured table from token frequencies over your own records.
 
         Weights are inverse document frequency, rescaled so the rarest observed token sits
@@ -110,7 +110,7 @@ class RarityTable:
         lo, hi = min(idf.values()), max(idf.values())
         span = hi - lo
         if span <= 0:
-            scaled = {t: MAX_WEIGHT for t in idf}
+            scaled = dict.fromkeys(idf, MAX_WEIGHT)
         else:
             scaled = {
                 t: min_weight + (MAX_WEIGHT - min_weight) * (v - lo) / span
@@ -120,7 +120,7 @@ class RarityTable:
 
     @classmethod
     def from_csv(cls, path: str, token_field: str = "token",
-                 count_field: str = "count") -> "RarityTable":
+                 count_field: str = "count") -> RarityTable:
         """Build a table from a two-column CSV of token counts."""
         with open(path, newline="", encoding="utf-8") as fh:
             counts = {
@@ -130,7 +130,7 @@ class RarityTable:
         return cls.from_counts(counts)
 
     @classmethod
-    def uniform(cls) -> "RarityTable":
+    def uniform(cls) -> RarityTable:
         """Every token weighted equally, initials included: rarity weighting off.
 
         With this table, :func:`~indic_namematch.matchers.rarity_weighted` reduces exactly to

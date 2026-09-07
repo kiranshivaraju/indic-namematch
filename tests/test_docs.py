@@ -16,7 +16,8 @@ from indic_namematch import NameMatcher
 from indic_namematch.matchers import REGISTRY
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-README = open(os.path.join(ROOT, "README.md"), encoding="utf-8").read()
+with open(os.path.join(ROOT, "README.md"), encoding="utf-8") as _fh:
+    README = _fh.read()
 
 TABLE_CLAIMS = re.findall(r"\|\s*`([^`]+)`\s*/\s*`([^`]+)`\s*\|\s*([01]\.\d+)\s*\|", README)
 CODE_CLAIMS = re.findall(r'm\.score\("([^"]+)",\s*"([^"]+)"\)\s*#\s*([01]\.\d+)', README)
@@ -66,5 +67,6 @@ def test_readme_documents_every_matcher():
 def test_changelog_mentions_the_current_version():
     from indic_namematch import __version__
 
-    changelog = open(os.path.join(ROOT, "CHANGELOG.md"), encoding="utf-8").read()
+    with open(os.path.join(ROOT, "CHANGELOG.md"), encoding="utf-8") as fh:
+        changelog = fh.read()
     assert f"[{__version__}]" in changelog
